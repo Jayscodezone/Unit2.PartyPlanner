@@ -3,24 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Party Planner</title>
+    <link rel="stylesheet" href="partyplanner.css"/>
+    <script defer src="partyplanner.js"></script>
 </head>
 <body>
-    <h1> Party Planner</h1>
+    <h1> Events </h1>
     <form id ="addEvent">
         <label>
-         Name 
+         Names
          <input type= "text" name ="eventName"/>
+        </label>
+        <label>
+            Dates
+            <input type = "text" date = "eventDate"/>
+        </label>
+        <label>
+        Times  
+        <input type = "text" time = "eventTime"/>
+        </label>
+        <label>
+            Locations
+            <input type = "text" location = "eventLocation"/>
         </label>
         <label>
             Description of Decorations 
             <input type ="text" name="description" />
         </label>
-        <label>
-            Image Url 
-            <input type ="text"name ="imageUrl"/>
-
-        </label>
+        
         <button>Add Event </button>
     </form>
     <ul id="events"></ul>
