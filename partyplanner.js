@@ -113,7 +113,6 @@ function renderEvents() {
 artistList.replaceChildren(...eventCards);
 }
 
-
 /** Syncs state with the API and rerender */
 async function render() {
   await getEvents();
@@ -140,4 +139,4 @@ form.addEventListener("submit", async (event) => {
     await addEvent(event);
 render();
 });
-// TODO: Add event  with form data when the form is submitted
+}
