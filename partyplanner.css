@@ -1,6 +1,6 @@
 ul {
     list-style: none;
-    padding-left: auto;
+    padding-left: 0;
   
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
