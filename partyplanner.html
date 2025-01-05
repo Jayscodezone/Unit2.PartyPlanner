@@ -1,38 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Party Planner</title>
-    <link rel="stylesheet" href="partyplanner.css"/>
+    <link rel="stylesheet" href="partyplanner.css" />
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
     <script defer src="partyplanner.js"></script>
-</head>
-<body>
-    <h1> Events </h1>
-    <form id ="addEvent">
-        <label>
-         Names
-         <input type= "text" name ="eventName"/>
-        </label>
-        <label>
-            Dates
-            <input type = "text" date = "eventDate"/>
-        </label>
-        <label>
-        Times  
-        <input type = "text" time = "eventTime"/>
-        </label>
-        <label>
-            Locations
-            <input type = "text" location = "eventLocation"/>
-        </label>
-        <label>
-            Description  
-            <input type ="text" name="description"/>
-        </label>
-        
-        <button type = "submit" id="add-event"> Add Event</button>
-    </form>
-    <ul id="events"></ul>
-</body>
+
+  </head>
+  <body>
+    <header>
+      <h1>Party Planner</h1>
+    </header>
+    <h2>New Party Info
+    </h2>
+    <main>
+      <form id="partyForm">
+        <label for="eventName">Name:</label>
+        <input id="eventName" name="eventName" type="text" required />
+        <label for="eventDate">Date and Time:</label>
+        <input id="eventDate" name="eventDate" type="datetime-local" />
+        <label for="eventLocation">Location:</label>
+        <input id="eventLocation" name="eventLocation" type="text" />
+
+        <label for="eventDescription">Description:</label>
+        <input id="eventDescription" name="eventDescription" type="text" />
+
+        <button type="submit" id="add-event">Add Event</button>
+      </form>
+
+      <div id="partyList"></div>
+    </main>
+  </body>
 </html>
